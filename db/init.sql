@@ -10,7 +10,7 @@ create table autoren (
 create table kategorien(
     katid       int unsigned not null primary key auto_increment,
     katname     varchar(60) not null ,
-    kathouptnum int unsigned
+    kathouptnum int unsigned null
 ) engine = InnoDB;
 
 # delete from kategorien where 1=1;
@@ -21,4 +21,4 @@ FIELDS TERMINATED BY ';'
 ENCLOSED BY ''
 LINES TERMINATED BY '\n';
 
-SHOW VARIABLES LIKE "secure_file_priv";
+-- SHOW VARIABLES LIKE "secure_file_priv";
